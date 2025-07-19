@@ -13,8 +13,9 @@ const Header = () => {
   return (
     <div className="h-full flex items-center justify-center relative">
       {/* <div className="relative"> */}
-      <Blob top={-200} start={200} size={400} />
-      <Blob top={200} start={1400} size={300} />
+      <Blob top={-400} start={200} size={600} opacity={0.5} />
+      <Blob top={100} start={1400} size={300} />
+      <Blob top={460} start={400} size={700} opacity={0.3} />
       {/* </div> */}
       <div className="flex flex-col z-20 transition-all">
         <TextMotion>
@@ -55,13 +56,13 @@ const Header = () => {
           </a>
         </TextMotion>
 
-        <div className="flex items-center justify-center gap-2 mt-10">
-          {techStacks.map(({ icon, label }, idx) => (
-            <Icons key={idx} icon={icon} label={label} />
-          ))}
-
-          {/* <InfiniteSlider /> */}
-        </div>
+        <TextMotion delay={0.6}>
+          <div className="flex items-center justify-center gap-2 mt-10 max-w-xl flex-wrap">
+            {techStacks.map(({ icon, label }, idx) => (
+              <Icons key={idx} icon={icon} label={label} />
+            ))}
+          </div>
+        </TextMotion>
       </div>
     </div>
   );

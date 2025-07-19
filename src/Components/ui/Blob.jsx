@@ -1,15 +1,17 @@
-const Blob = ({ top, start, size }) => {
+const Blob = ({ top, start, size, opacity = 0.4 }) => {
   return (
     <div
-      className=" absolute z-0 blur-3xl opacity-50"
-      style={{ width: size, top: top, left: start }}
+      className=" absolute z-0 blur-2xl"
+      style={{ width: size, top: top, left: start, opacity: opacity }}
     >
       <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <path
-          fill="#E8DAFF"
-          d="M23.2,-5.7C32.8,21.8,45,50.2,34.1,61.6C23.2,72.9,-10.7,67.2,-33.8,49.7C-56.9,32.2,-69.2,2.9,-61.7,-21.7C-54.3,-46.3,-27.1,-66.1,-10.1,-62.8C6.9,-59.5,13.7,-33.1,23.2,-5.7Z"
-          transform="translate(100 100)"
-        />
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="#8A3FFC"
+            d="M38.6,-68.8C47.7,-61.7,50.9,-46.5,58.7,-33.7C66.4,-20.8,78.8,-10.4,79.5,0.4C80.2,11.3,69.4,22.5,58.8,30.5C48.2,38.4,37.8,43,28.1,51C18.3,59,9.2,70.5,-3.4,76.4C-16,82.4,-32.1,82.8,-45,76.6C-57.9,70.4,-67.6,57.6,-72.3,43.7C-77,29.8,-76.5,14.9,-72,2.6C-67.5,-9.7,-59,-19.4,-50.7,-27C-42.4,-34.5,-34.2,-39.8,-25.8,-47.2C-17.4,-54.7,-8.7,-64.3,3.1,-69.6C14.8,-74.9,29.6,-75.9,38.6,-68.8Z"
+            transform="translate(100 100)"
+          />
+        </svg>
       </svg>
     </div>
   );

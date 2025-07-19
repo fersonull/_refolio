@@ -11,9 +11,9 @@ const NavBar = () => {
           </a>
 
           <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-full p-2 flex items-center shadow-md space-x-4">
-            {navItems.map(({ label }, idx) => (
+            {navItems.map(({ label, id }, idx) => (
               <a
-                href=""
+                href={`#${id}`}
                 key={idx}
                 className={`hover:text-glow px-4 py-2 rounded-full font-medium transition-all  ${
                   label === "Home" ? "bg-white/10" : "dark:text-white/70"
