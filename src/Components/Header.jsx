@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div className="h-full flex items-center justify-center relative">
       {/* <div className="relative"> */}
-      <Blob top={-400} start={200} size={600} opacity={0.5} />
+      <Blob top={-400} start={200} size={570} opacity={0.3} />
       <Blob top={100} start={1400} size={300} />
       <Blob top={460} start={400} size={700} opacity={0.3} />
       {/* </div> */}
