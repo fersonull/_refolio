@@ -5,6 +5,9 @@ import ImageCircle from "./ui/ImageCircle";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Blob from "./ui/Blob";
+import { techStacks } from "../../constants/index";
+import Icons from "./ui/Icons";
+import InfiniteSlider from "./ui/InfiniteSlider";
 
 const Header = () => {
   return (
@@ -15,10 +18,7 @@ const Header = () => {
       {/* </div> */}
       <div className="flex flex-col z-20 transition-all">
         <TextMotion>
-          <ImageCircle
-            src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
-            size={120}
-          />
+          <ImageCircle src="/ako3.png" size={120} />
           <TextMotion
             delay={0.2}
             className="font-outfit font-medium leading-relaxed text-center mt-5"
@@ -29,7 +29,7 @@ const Header = () => {
           </TextMotion>
         </TextMotion>
         <div className="font-outfit text-[60px] font-bold text-center ">
-          <TextMotion delay={0.3} className="md:text-nowrap">
+          <TextMotion delay={0.3} className="text-glow">
             <GradientText>Ideas. Code. Impact.</GradientText>
           </TextMotion>
         </div>
@@ -38,12 +38,11 @@ const Header = () => {
             From concept to deployment — building impactful web experiences.
           </GradientSubText>
         </TextMotion>
-
         <TextMotion
           delay={0.5}
           className="flex items-center justify-center mt-5 gap-8"
         >
-          <button className="rounded-full px-4 py-2 bg-white/20 border-2 border-white/20 font-outfit hover:bg-white/10 text-sm flex items-center justify-center gap-1">
+          <button className="primary-btn  flex items-center justify-center gap-1 text-sm">
             Contact me <MdOutlineArrowOutward size={19} />
           </button>
           <a
@@ -55,6 +54,14 @@ const Header = () => {
             Go to GitHub
           </a>
         </TextMotion>
+
+        <div className="flex items-center justify-center gap-2 mt-10">
+          {techStacks.map(({ icon, label }, idx) => (
+            <Icons key={idx} icon={icon} label={label} />
+          ))}
+
+          {/* <InfiniteSlider /> */}
+        </div>
       </div>
     </div>
   );

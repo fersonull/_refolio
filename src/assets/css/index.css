@@ -11,6 +11,6 @@
   scroll-behavior: smooth;
 }
 
-.glow-text {
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0ff;
+.primary-btn {
+  @apply transition-all hover:text-glow rounded-full px-4 py-2 bg-white/20 border-2 border-white/20 font-outfit;
 }

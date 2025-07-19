@@ -11,9 +11,29 @@ export default {
       fontFamily: {
         outfit: ['Outfit', 'Sans'],
         nyght: ['Nyght Serif Light Italic', 'Outfit'],
-      }
+      },
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        slide: "slide 30s linear infinite",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".text-glow": {
+          textShadow: "0 0 8px #fff",
+        },
+        ".text-soft": {
+          textShadow: "1px 1px 4px rgba(0,0,0,0.3)",
+        },
+      });
+    },
+  ],
 }
 
