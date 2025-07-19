@@ -7,6 +7,10 @@
   height: 0px;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .glow-text {
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0ff;
 }

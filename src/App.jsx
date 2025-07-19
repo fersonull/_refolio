@@ -1,18 +1,16 @@
 import React from "react";
 import NavBar from "./Components/ui/NavBar";
 import Header from "./Components/Header";
+import Layout from "./Layout";
 
 const App = () => {
   return (
-    <div className="overflow-x-hidden h-screen bg-black font-nyghtSerif dark:text-zinc-100">
-      <NavBar />
+    <Layout>
       <div className="h-screen">
         <Header />
       </div>
-      <div className="h-screen">
-        <Header />
-      </div>
-    </div>
+      <div className="h-screen">{/* <Header /> */}</div>
+    </Layout>
   );
 };
 

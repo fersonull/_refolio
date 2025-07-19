@@ -1,14 +1,18 @@
-import React from "react";
 import GradientText from "./ui/GradientText";
 import TextMotion from "./ui/TextMotion";
 import GradientSubText from "./ui/GradientSubText";
 import ImageCircle from "./ui/ImageCircle";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import Blob from "./ui/Blob";
 
 const Header = () => {
   return (
     <div className="h-full flex items-center justify-center relative">
+      {/* <div className="relative"> */}
+      <Blob top={-200} start={200} size={400} />
+      <Blob top={200} start={1400} size={300} />
+      {/* </div> */}
       <div className="flex flex-col z-20 transition-all">
         <TextMotion>
           <ImageCircle
@@ -26,7 +30,7 @@ const Header = () => {
         </TextMotion>
         <div className="font-outfit text-[60px] font-bold text-center ">
           <TextMotion delay={0.3} className="md:text-nowrap">
-            <GradientText>Ideas. Code. Impact</GradientText>
+            <GradientText>Ideas. Code. Impact.</GradientText>
           </TextMotion>
         </div>
         <TextMotion delay={0.4} className="md:text-nowrap">
@@ -35,15 +39,22 @@ const Header = () => {
           </GradientSubText>
         </TextMotion>
 
-        <div className="flex items-center justify-center mt-5 gap-8">
+        <TextMotion
+          delay={0.5}
+          className="flex items-center justify-center mt-5 gap-8"
+        >
           <button className="rounded-full px-4 py-2 bg-white/20 border-2 border-white/20 font-outfit hover:bg-white/10 text-sm flex items-center justify-center gap-1">
-            Contact me <MdOutlineArrowOutward size={20} />
+            Contact me <MdOutlineArrowOutward size={19} />
           </button>
-          <button className="rounded-full px-4 py-2  font-outfit hover:underline text-sm flex items-center justify-center gap-2">
+          <a
+            href="https://github.com/fersonull/"
+            target="_blank"
+            className="rounded-full px-4 py-2  font-outfit hover:underline text-sm flex items-center justify-center gap-2"
+          >
             <FaGithub />
             Go to GitHub
-          </button>
-        </div>
+          </a>
+        </TextMotion>
       </div>
     </div>
   );
