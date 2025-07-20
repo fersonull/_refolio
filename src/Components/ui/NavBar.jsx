@@ -1,7 +1,7 @@
 import React from "react";
 import { navItems } from "../../../constants/index";
 
-const NavBar = () => {
+const NavBar = ({ active }) => {
   return (
     <>
       <div className="fixed top-0 flex items-center justify-center w-full lg:px-32 py-5 z-50">
@@ -16,7 +16,7 @@ const NavBar = () => {
                 href={`#${id}`}
                 key={idx}
                 className={`hover:text-glow px-4 py-2 rounded-full font-medium transition-all  ${
-                  label === "Home" ? "bg-white/10" : "dark:text-white/70"
+                  active === id ? "bg-white/10" : "dark:text-white/70"
                 }`}
               >
                 <p className="text-xs hover:text-white/80">{label}</p>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import GradientText from "./ui/GradientText";
 import TextMotion from "./ui/TextMotion";
 import GradientSubText from "./ui/GradientSubText";
@@ -7,11 +8,24 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import Blob from "./ui/Blob";
 import { techStacks } from "../../constants/index";
 import Icons from "./ui/Icons";
-import InfiniteSlider from "./ui/InfiniteSlider";
+import { useInView } from "react-intersection-observer";
 
-const Header = () => {
+const Header = ({ setActive }) => {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  useEffect(() => {
+    if (inView) {
+      setActive("home");
+    }
+  }, [inView]);
+
   return (
-    <div className="h-full flex items-center justify-center relative">
+    <section
+      ref={ref}
+      id="home"
+      className="h-full flex items-center justify-center relative"
+    >
       {/* <div className="relative"> */}
       <Blob top={-400} start={200} size={570} opacity={0.3} />
       <Blob top={100} start={1400} size={300} />
@@ -64,7 +78,7 @@ const Header = () => {
           </div>
         </TextMotion>
       </div>
-    </div>
+    </section>
   );
 };
 

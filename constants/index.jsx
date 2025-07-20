@@ -16,7 +16,7 @@ import {
 } from "react-icons/si";
 
 export const navItems = [
-  { id: "", label: "Home" },
+  { id: "home", label: "Home" },
   { id: "about", label: "About" },
   { id: "projects", label: "Projects" },
 ];
