@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import NavBar from "./Components/ui/NavBar";
 import Header from "./Components/Header";
 import Layout from "./Layout";
 import AboutMe from "./Components/AboutMe";
+import Projects from "./Components/Projects";
 
 const App = () => {
+
+
   const [active, setActive] = useState("");
   return (
     <Layout active={active}>
@@ -13,6 +15,9 @@ const App = () => {
       </div>
       <div className="h-screen">
         <AboutMe setActive={setActive} />
+      </div>
+      <div className="h-screen">
+        <Projects setActive={setActive} />
       </div>
     </Layout>
   );

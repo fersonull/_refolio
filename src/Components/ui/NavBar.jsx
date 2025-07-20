@@ -16,7 +16,7 @@ const NavBar = ({ active }) => {
                 href={`#${id}`}
                 key={idx}
                 className={`hover:text-glow px-4 py-2 rounded-full font-medium transition-all  ${
-                  active === id ? "bg-white/10" : "dark:text-white/70"
+                  active === id ? "bg-white/10 text-glow" : "dark:text-white/70"
                 }`}
               >
                 <p className="text-xs hover:text-white/80">{label}</p>
