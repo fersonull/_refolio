@@ -5,8 +5,6 @@ import AboutMe from "./Components/AboutMe";
 import Projects from "./Components/Projects";
 
 const App = () => {
-
-
   const [active, setActive] = useState("");
   return (
     <Layout active={active}>

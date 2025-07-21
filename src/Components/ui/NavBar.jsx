@@ -4,13 +4,13 @@ import { navItems } from "../../../constants/index";
 const NavBar = ({ active }) => {
   return (
     <>
-      <div className="fixed top-0 flex items-center justify-center w-full lg:px-32 py-5 z-50">
+      <div className="backdrop-blur-[2px] md:backdrop-blur-none fixed top-0 flex items-center justify-center w-full px-6 lg:px-32 py-5 z-50">
         <div className="flex items-center justify-between w-full">
           <a href="#" className="w-12">
             <img src="/logo.png" alt="" />
           </a>
 
-          <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-full p-2 flex items-center shadow-md space-x-4">
+          <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-full p-2 md:flex items-center shadow-md space-x-4 hidden">
             {navItems.map(({ label, id }, idx) => (
               <a
                 href={`#${id}`}

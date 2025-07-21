@@ -5,20 +5,20 @@ import LocomotiveScroll from "locomotive-scroll";
 const Layout = ({ children, active }) => {
   const scrollRef = useRef(null);
 
-  useEffect(() => {
-    if (!scrollRef.current) return;
+  // useEffect(() => {
+  //   if (!scrollRef.current) return;
 
-    const scroll = new LocomotiveScroll({
-      el: scrollRef.current,
-      smooth: true,
-      lerp: 0.02,
-      multiplier: 0.5,
-    });
+  //   const scroll = new LocomotiveScroll({
+  //     el: scrollRef.current,
+  //     smooth: true,
+  //     lerp: 0.02,
+  //     multiplier: 0.5,
+  //   });
 
-    return () => {
-      scroll.destroy();
-    };
-  }, []);
+  //   return () => {
+  //     scroll.destroy();
+  //   };
+  // }, []);
 
   return (
     <div className="overflow-x-hidden dark:bg-black font-nyghtSerif dark:text-zinc-100 flex flex-col relative">

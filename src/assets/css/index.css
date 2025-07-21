@@ -12,5 +12,17 @@
 }
 
 .primary-btn {
-  @apply transition-all hover:text-glow rounded-full px-4 py-2 bg-white/20 border-2 border-white/20 font-outfit;
+  @apply transition-all hover:text-glow rounded-full md:px-4 px-3 py-1 lg:py-2 bg-white/20 border-2 border-white/20 font-outfit;
+}
+
+.title {
+  @apply text-6xl font-medium;
+}
+
+.title-itaic {
+  @apply italic bg-gradient-to-b from-zinc-700 via-zinc-200 to-zinc-50 text-transparent bg-clip-text;
+}
+
+.gradient-violet {
+  @apply bg-gradient-to-b from-violet-900 via-violet-500;
 }
