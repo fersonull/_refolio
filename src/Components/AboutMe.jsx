@@ -19,8 +19,8 @@ const AboutMe = ({ setActive }) => {
       ref={ref}
       className="font-outfit h-full flex items-center justify-center"
     >
-      <div className="flex justify-between w-full px-[10rem]">
-        <div className="max-w-xl">
+      <div className="flex justify-between w-full lg:px-[10rem] px-8">
+        <div className="lg:max-w-xl">
           <h3 className="text-3xl">
             <TextMotion className="mb-2 text-sm font-normal dark:text-white/70 uppercase">
               About Me
@@ -33,7 +33,7 @@ const AboutMe = ({ setActive }) => {
               </GradientText>
             </TextMotion>
           </h3>
-          <div className="text-xl flex flex-col gap-4 mt-8 text-white/70">
+          <div className="lg:text-xl flex flex-col gap-4 lg:mt-8 mt-4 text-white/70">
             <TextMotion>
               I'm Jasfer Monton, a proactive full-stack developer passionate
               about creating dynamic web experiences. From frontend to backend,
@@ -53,7 +53,8 @@ const AboutMe = ({ setActive }) => {
           </div>
         </div>
 
-        <div className="flex-1"></div>
+        {/* galleru */}
+        <div className="flex-1 "></div>
       </div>
     </section>
   );

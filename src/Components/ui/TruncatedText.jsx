@@ -1,13 +1,12 @@
 import React from "react";
-const MAX_LENGTH = 190;
 
-const TruncatedText = ({ children }) => {
-  const isTooLong = children.length > MAX_LENGTH;
+const TruncatedText = ({ children, maxLength }) => {
+  const isTooLong = children.length > maxLength;
   const displayedText = isTooLong
-    ? children.slice(0, MAX_LENGTH) + "…"
+    ? children.slice(0, maxLength) + "…"
     : children;
 
-  return <p>{displayedText}</p>;
+  return <p className="text-white/70 text-xs md:text-lg">{displayedText}</p>;
 };
 
 export default TruncatedText;

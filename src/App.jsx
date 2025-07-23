@@ -14,7 +14,7 @@ const App = () => {
       <div className="h-screen">
         <AboutMe setActive={setActive} />
       </div>
-      <div className="h-screen">
+      <div className="min-h-screen">
         <Projects setActive={setActive} />
       </div>
     </Layout>
