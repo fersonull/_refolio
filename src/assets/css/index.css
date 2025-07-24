@@ -16,7 +16,7 @@
 }
 
 .title {
-  @apply lg:text-6xl font-medium;
+  @apply lg:text-6xl text-3xl font-medium;
 }
 
 .title-itaic {

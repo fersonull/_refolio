@@ -9,6 +9,7 @@ import {
   RiFirebaseFill,
   RiHtml5Fill,
   RiCss3Fill,
+  RiGithubFill,
 } from "react-icons/ri";
 import {
   SiLaravel,
@@ -22,6 +23,7 @@ export const navItems = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
   { id: "projects", label: "Projects" },
+  { id: "skills", label: "Skills" },
 ];
 
 export const aboutMe = {
@@ -46,6 +48,7 @@ export const techStacks = [
   { label: "Tailwind CSS", icon: <RiTailwindCssFill color="dodgerblue" /> },
   { label: "Bootstrap", icon: <RiBootstrapFill color="#7952B3" /> },
   { label: "Git", icon: <SiGit color="#F05033" /> },
+  { label: "GitHub", icon: <RiGithubFill /> },
 ];
 
 export const projects = [

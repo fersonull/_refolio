@@ -3,6 +3,7 @@ import Header from "./Components/Header";
 import Layout from "./Layout";
 import AboutMe from "./Components/AboutMe";
 import Projects from "./Components/Projects";
+import Skills from "./Components/Skills";
 
 const App = () => {
   const [active, setActive] = useState("");
@@ -16,6 +17,9 @@ const App = () => {
       </div>
       <div className="min-h-screen">
         <Projects setActive={setActive} />
+      </div>
+      <div className="h-screen">
+        <Skills setActive={setActive} />
       </div>
     </Layout>
   );
