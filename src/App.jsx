@@ -4,6 +4,7 @@ import Layout from "./Layout";
 import AboutMe from "./Components/AboutMe";
 import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
+import Contact from "./Components/Contact";
 
 const App = () => {
   const [active, setActive] = useState("");
@@ -15,11 +16,14 @@ const App = () => {
       <div className="h-screen">
         <AboutMe setActive={setActive} />
       </div>
-      <div className="min-h-screen">
+      <div className="min-h-screen lg:h-screen">
         <Projects setActive={setActive} />
       </div>
-      <div className="h-screen">
+      <div className="h-screen ">
         <Skills setActive={setActive} />
+      </div>
+      <div className="h-screen ">
+        <Contact setActive={setActive} />
       </div>
     </Layout>
   );

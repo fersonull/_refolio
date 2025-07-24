@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { techStacks } from "../../constants";
 import Badge from "./ui/Badge";
-import Status from "./ui/Status";
+import Blob from "./ui/Blob";
 
 const Skills = ({ setActive }) => {
   const { ref, inView } = useInView({ threshold: 0.5 });
@@ -17,6 +17,8 @@ const Skills = ({ setActive }) => {
       ref={ref}
       className="h-full flex flex-col items-center justify-center relative font-outfit"
     >
+      {/* <Blob top={200} start={500} size={500} opacity={0.3} /> */}
+
       <div className="flex text-center flex-col lg:mb-8 mb-4">
         <p className="uppercase text-white/70 md:text-[16px] text-xs">
           My Skills

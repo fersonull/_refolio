@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import NavBar from "./Components/ui/NavBar";
+import Footer from "./Components/Footer";
 import LocomotiveScroll from "locomotive-scroll";
 
 const Layout = ({ children, active }) => {
@@ -31,6 +32,7 @@ const Layout = ({ children, active }) => {
       >
         {children}
       </div>
+      <Footer />
     </div>
   );
 };

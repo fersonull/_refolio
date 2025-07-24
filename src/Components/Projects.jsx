@@ -18,7 +18,7 @@ const Projects = ({ setActive }) => {
       ref={ref}
       className="h-full flex flex-col items-center justify-center relative"
     >
-      <Blob top={-300} start={500} size={500} opacity={0.3} />
+      {/* <Blob top={-300} start={500} size={500} opacity={0.3} /> */}
       <div className="lg:mb-14 mb-7 text-center">
         <p className="font-outfit uppercase text-md font-medium text-white/70 md:mb-4">
           Projects

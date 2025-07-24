@@ -32,6 +32,12 @@ export const aboutMe = {
   inf: "Monton",
 };
 
+export const socials = [
+  { url: "fb", label: "Facebook" },
+  { url: "ig", label: "Instagram" },
+  { url: "github", label: "GitHub" },
+];
+
 export const techStacks = [
   { label: "HTML", icon: <RiHtml5Fill color="#E44D26" /> },
   { label: "CSS", icon: <RiCss3Fill color="#264DE4" /> },
@@ -77,7 +83,3 @@ export const projects = [
     stacks: [techStacks[2], techStacks[3], techStacks[5], techStacks[6]],
   },
 ];
-
-export const item = {
-  frameworks: [{}],
-};
