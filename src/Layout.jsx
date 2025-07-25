@@ -22,7 +22,7 @@ const Layout = ({ children, active }) => {
   // }, []);
 
   return (
-    <div className="overflow-x-hidden dark:bg-black font-nyghtSerif dark:text-zinc-100 flex flex-col relative">
+    <div className="overflow-x-hidden dark:bg-black dark:text-zinc-100 flex flex-col relative">
       <NavBar active={active} />
       <div
         className="flex-1"

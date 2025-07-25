@@ -29,7 +29,7 @@ const Header = ({ setActive }) => {
       {/* <div className="relative"> */}
       <Blob top={-400} start={200} size={570} opacity={0.3} />
       <Blob top={100} start={1400} size={300} />
-      <Blob top={460} start={400} size={700} opacity={0.3} />
+      <Blob top={460} start={400} size={700} opacity={0.2} />
       {/* </div> */}
       <div className="flex flex-col z-20 transition-all">
         <TextMotion>
@@ -59,9 +59,9 @@ const Header = ({ setActive }) => {
           delay={0.5}
           className="flex items-center justify-center mt-5 md:gap-8 gap-2"
         >
-          <button className="primary-btn flex items-center justify-center gap-1 md:text-sm text-xs">
+          <a href="#contact" className="primary-btn flex items-center justify-center gap-1 md:text-sm text-xs">
             Contact me <MdOutlineArrowOutward size={19} />
-          </button>
+          </a>
           <a
             href="https://github.com/fersonull/"
             target="_blank"
@@ -72,13 +72,13 @@ const Header = ({ setActive }) => {
           </a>
         </TextMotion>
 
-        <TextMotion delay={0.6}>
+        {/* <TextMotion delay={0.6}>
           <div className="md:flex items-center justify-center gap-2 md:mt-10 mt-6 md:max-w-xl max-w-[90%] mx-auto flex-wrap hidden">
             {techStacks.map(({ icon, label }, idx) => (
               <Icons key={idx} icon={icon} label={label} />
             ))}
           </div>
-        </TextMotion>
+        </TextMotion> */}
       </div>
     </section>
   );

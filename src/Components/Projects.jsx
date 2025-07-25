@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { projects } from "../../constants";
 import { useInView } from "react-intersection-observer";
 import GradientText from "./ui/GradientText";
-import Blob from "./ui/Blob";
+import { RiArrowRightBoxFill } from "react-icons/ri";
 import ProjectCard from "./ui/ProjectCard";
 
 const Projects = ({ setActive }) => {
@@ -41,6 +41,11 @@ const Projects = ({ setActive }) => {
           />
         ))}
       </div>
+
+      <button className="font-outfit hover:text-glow mt-10 flex items-center justify-center gap-2">
+        <span>See all projects</span>
+        <RiArrowRightBoxFill size={20} />
+      </button>
     </section>
   );
 };

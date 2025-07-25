@@ -33,7 +33,10 @@ export const aboutMe = {
 };
 
 export const socials = [
-  { url: "fb", label: "Facebook" },
+  {
+    url: "https://www.facebook.com/profile.php?id=61578113625007",
+    label: "Facebook",
+  },
   { url: "ig", label: "Instagram" },
   { url: "github", label: "GitHub" },
 ];

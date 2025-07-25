@@ -22,7 +22,7 @@ const NavBar = ({ active }) => {
                 <p className="text-xs hover:text-white/80">{label}</p>
               </a>
             ))}
-            <a href="#contact" className="primary-btn text-xs">Book a Call</a>
+            <a href="#contact" className="primary-btn text-xs">Get in Touch</a>
           </div>
 
           <div className=""></div>
