@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import Modal from "./ui/Modal";
+import ModalForm from "./ui/ModalForm";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { useInView } from "react-intersection-observer";
 
 const Contact = ({ setActive }) => {
+  const [isOpen, toggleModal] = useState(false);
   const { ref, inView } = useInView({ threshold: 0.5 });
 
   useEffect(() => {
@@ -14,7 +17,11 @@ const Contact = ({ setActive }) => {
       ref={ref}
       className="h-full flex items-center justify-center"
     >
-      <div className="relative w-full lg:h-[600px] h-[400px]">
+      <Modal isOpen={isOpen} onClose={() => toggleModal(false)}>
+        <ModalForm />
+      </Modal>
+
+      <div className="relative w-full h-[600px]">
         <img
           src="/paper.png"
           alt=""
@@ -35,7 +42,10 @@ const Contact = ({ setActive }) => {
             </div>
           </div>
 
-          <button className="text-xs lg:text-lg lg:ps-4 lg:pe-2 pe-1 ps-2 py-2 rounded-full border border-white/40 bg-white/10 font-outfit lg:mt-8 mt-6 relative overflow-hidden flex items-center justify-center gap-3 font-medium hover:scale-105 hover:bg-white/60 transition-all">
+          <button
+            className="text-xs lg:text-lg lg:ps-4 lg:pe-2 pe-1 ps-2 py-2 rounded-full border border-white/40 bg-white/10 font-outfit lg:mt-8 mt-6 relative overflow-hidden flex items-center justify-center gap-3 font-medium hover:scale-105 hover:bg-white/60 transition-all"
+            onClick={() => toggleModal(true)}
+          >
             Get in Touch
             <div className="lg:p-3 p-2 bg-white/40 end-0 rounded-full">
               <FaArrowRightLong size={11} />

@@ -19,7 +19,7 @@ const AboutMe = ({ setActive }) => {
       ref={ref}
       className="font-outfit h-full flex items-center justify-center"
     >
-      <div className="flex justify-between w-full lg:px-[10rem] px-8">
+      <div className="flex flex-col lg:flex-row justify-between w-full lg:px-[10rem] px-8">
         <div className="lg:max-w-xl">
           <h3 className="text-3xl">
             <TextMotion className="mb-2 text-sm font-normal dark:text-white/70 uppercase">
@@ -54,7 +54,15 @@ const AboutMe = ({ setActive }) => {
         </div>
 
         {/* galleru */}
-        <div className="flex-1 "></div>
+        <div className="flex-1 xl:flex items-center justify-end hidden">
+          <div className="w-[400px] h-full bg-red-300 rounded-xl overflow-hidden">
+            <img
+              src="/ako3.png"
+              className="w-full h-full object-cover"
+              alt="profile"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

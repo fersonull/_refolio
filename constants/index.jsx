@@ -114,7 +114,7 @@ export const projects = [
   {
     image: "/mesids.png",
     title: "Mesids",
-    desc: "Whisper is a privacy-first anonymous messaging web application that allows users to send and receive messages without revealing their identity. The platform is designed to encourage open, honest, and unfiltered communication in a secure and judgment-free environment.",
+    desc: "A privacy-first anonymous messaging web application that allows users to send and receive messages without revealing their identity. The platform is designed to encourage open, honest, and unfiltered communication in a secure and judgment-free environment.",
     stacks: [techStacks[11], techStacks[10], techStacks[9], techStacks[12]],
   },
 ];
