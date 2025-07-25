@@ -17,6 +17,7 @@ import {
   SiMongodb,
   SiMysql,
   SiGit,
+  SiLivewire,
 } from "react-icons/si";
 
 export const navItems = [
@@ -58,6 +59,7 @@ export const techStacks = [
   { label: "Bootstrap", icon: <RiBootstrapFill color="#7952B3" /> },
   { label: "Git", icon: <SiGit color="#F05033" /> },
   { label: "GitHub", icon: <RiGithubFill /> },
+  { label: "Livewire", icon: <SiLivewire color="pink" /> },
 ];
 
 export const projects = [
@@ -84,5 +86,35 @@ export const projects = [
     title: "NotGPT",
     desc: "A web-based AI application that integrates AI APIs to deliver intelligent and dynamic functionalities. Developed with modern web technologies, it communicates with AI-powered services to process data, generate insights, and elevate the overall user experience.",
     stacks: [techStacks[2], techStacks[3], techStacks[5], techStacks[6]],
+  },
+  {
+    image: "/soulat.png",
+    title: "Soulat",
+    desc: "This project is a full-featured blog web application designed for writers, content creators, and developers who want a clean and modern platform to publish and manage articles. Built with a focus on simplicity, readability, and user experience, the app allows users to create, edit, and delete blog posts with ease.",
+    stacks: [
+      techStacks[11],
+      techStacks[16],
+      techStacks[10],
+      techStacks[9],
+      techStacks[12],
+    ],
+  },
+  {
+    image: "/chatmo.png",
+    title: "chatMo",
+    desc: "chatMo is a real-time messaging web application that connects users from around the world in public and private chat rooms. Designed with speed, security, and scalability in mind, the app allows users to communicate instantly—whether for socializing, collaboration, or community-building.",
+    stacks: [
+      techStacks[7],
+      techStacks[6],
+      techStacks[5],
+      techStacks[3],
+      techStacks[12],
+    ],
+  },
+  {
+    image: "/mesids.png",
+    title: "Mesids",
+    desc: "Whisper is a privacy-first anonymous messaging web application that allows users to send and receive messages without revealing their identity. The platform is designed to encourage open, honest, and unfiltered communication in a secure and judgment-free environment.",
+    stacks: [techStacks[11], techStacks[10], techStacks[9], techStacks[12]],
   },
 ];
